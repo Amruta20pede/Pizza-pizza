@@ -110,7 +110,7 @@ const Product = ({ pizza }) => {
 export const getServerSideProps = async ({ params }) => {
   try {
     const res = await axios.get(
-      `http://localhost:3000/api/products/${params.id}`
+      `https://pizza-pizza-deploy.vercel.app/api/products/${params.id}`
     );
 
     const pizza = res.data;
